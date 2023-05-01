@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tron</title>
+    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 200vh;
+            font-family: 'Uncial Antiqua', cursive;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 80%;
+            height: 10;
+            padding-bottom: 56.25%;
+        }
+
+        #left-img, #right-img {
+            height: 140vh;
+            width: 100vw;
+            object-fit: contain;
+            position: absolute;
+            top: 60%;
+            transform: translateY(-40%);
+        }
+
+        #left-img {
+            right: 0;
+        }
+
+        #right-img {
+            left: 0;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <p style="font-size: 3em;">TR<span style="font-size: 1.5em;">o</span>N</p>
+    <div class="video-container">
+        <iframe src="https://player.vimeo.com/video/822283678?autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <img id="left-img" src="https://i.imgur.com/vAHoMgS_d.jpg?maxwidth=520&shape=thumb&fidelity=high">
+        <img id="right-img" src="https://i.imgur.com/XxgRCJd_d.jpg?maxwidth=520&shape=thumb&fidelity=high">
+    </div>
+</body>
+</html>
